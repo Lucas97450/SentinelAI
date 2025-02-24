@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelAI</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="libs/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>🔍 SentinelAI</h1>
+        <p>Votre assistant d’audit de cybersécurité</p>
+    </header>
+
+    <!-- 📌 Section Audit -->
+    <section class="audit-section">
+        <button id="fullAudit" class="btn-primary">🛡️ Lancer l'audit</button>
+
+        <div id="results" class="results-container">
+            <h2>📊 Résultats de l'Audit :</h2>
+            <p>📝 Aucun résultat pour le moment.</p>
+        </div>
+    </section>
+
+    <!-- 📢 Section Conseils IA -->
+    <section class="ai-section">
+        <h2>🤖 Conseils de Correction</h2>
+        <button id="getFixes" class="btn-secondary">💡 Obtenir des conseils IA</button>
+        <p id="aiFixes">📝 Cliquez sur le bouton ci-dessus pour obtenir des corrections.</p>
+    </section>
+
+    <!-- 📄 Export -->
+    <section class="export-section">
+        <button id="exportPDF" class="btn-export">📄 Exporter en PDF</button>
+    </section>
+
+    <!-- 🔑 Clé API OpenAI -->
+    <section class="api-key-container">
+        <h3>🔑 Configuration API</h3>
+        <input type="password" id="apiKeyInput" placeholder="Entrez votre clé API">
+        <button id="saveApiKey" class="btn-save">💾 Enregistrer</button>
+    </section>
+
+    <script src="popup.js"></script>
+</body>
+</html>
+
+

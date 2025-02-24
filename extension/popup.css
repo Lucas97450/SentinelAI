@@ -1,0 +1,171 @@
+/* 🌙 Fond général */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #2a0845 100%);
+    color: #ffffff;
+    width: 360px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 En-tête */
+header {
+    padding: 15px 0;
+}
+
+h1 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+/* 🎛️ Boutons */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+/* 🛡️ Audit */
+.btn-primary {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 65, 108, 0.3);
+    font-size: 15px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #e04060, #e13d1f);
+    box-shadow: 0 4px 15px rgba(255, 65, 108, 0.5);
+}
+
+/* 🤖 IA Fixes */
+.btn-secondary {
+    background: linear-gradient(135deg, #1e90ff, #007bff);
+    color: white;
+    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.3);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #1a78db, #005bbf);
+    box-shadow: 0 4px 15px rgba(30, 144, 255, 0.5);
+}
+
+/* 📄 Export PDF */
+.btn-export {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+.btn-export:hover {
+    background: linear-gradient(135deg, #e68900, #e14b1e);
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.5);
+}
+
+/* 🔑 Enregistrement Clé API */
+.btn-save {
+    background: linear-gradient(135deg, #8E8E93, #5a5a62);
+    color: white;
+    box-shadow: 0 4px 10px rgba(108, 117, 125, 0.3);
+}
+
+.btn-save:hover {
+    background: linear-gradient(135deg, #7a7a7f, #4c4c55);
+    box-shadow: 0 4px 15px rgba(108, 117, 125, 0.5);
+}
+
+/* 🔹 Sections */
+.audit-section, .ai-section, .export-section, .api-key-container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 🔹 Résultats */
+.results-container {
+    text-align: left;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+    max-height: 200px; /* ✅ Ajout d'une hauteur max pour éviter le débordement */
+    overflow-y: auto; /* ✅ Activation du scroll pour les longues listes */
+}
+
+/* ✅ Amélioration des éléments des résultats */
+.results-container p {
+    font-size: 13px;
+    word-wrap: break-word; /* ✅ Évite le dépassement des textes */
+    overflow-wrap: break-word;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+/* ✅ Correction des espacements */
+.results-container h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* 🔹 API Key Input */
+.api-key-container input {
+    width: 85%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.api-key-container input::placeholder {
+    color: #aaa;
+}
+
+/* ✅ Correction des boutons dans les sections */
+.api-key-container button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* 🔹 Effets et animations */
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* ✅ Transition fluide */
+* {
+    transition: all 0.3s ease-in-out;
+}
