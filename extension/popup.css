@@ -56,28 +56,72 @@ button {
     box-shadow: 0 4px 15px rgba(255, 65, 108, 0.5);
 }
 
-/* 🤖 IA Fixes */
+/* 📌 Section IA */
+.ai-section {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+/* 🔹 Titre */
+.ai-section h2 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🟦 Bouton "Obtenir des conseils IA" */
 .btn-secondary {
-    background: linear-gradient(135deg, #1e90ff, #007bff);
-    color: white;
-    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.3);
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 
 .btn-secondary:hover {
-    background: linear-gradient(135deg, #1a78db, #005bbf);
-    box-shadow: 0 4px 15px rgba(30, 144, 255, 0.5);
+    background: linear-gradient(135deg, #0056b3, #0088cc);
+    transform: scale(1.05);
 }
 
-/* 📄 Export PDF */
+/* 🟧 Bouton "Exporter en PDF" */
 .btn-export {
-    background: linear-gradient(135deg, #ff9800, #ff5722);
-    color: white;
-    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+    background: linear-gradient(135deg, #ff7b00, #ff3c00);
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-export:hover {
-    background: linear-gradient(135deg, #e68900, #e14b1e);
-    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.5);
+    background: linear-gradient(135deg, #cc5e00, #cc2f00);
+    transform: scale(1.05);
+}
+
+/* 🔽 Texte sous les boutons */
+#aiFixes {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 /* 🔑 Enregistrement Clé API */
